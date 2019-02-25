@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+    function run(){
+       
+    var getal = parseInt(document.getElementById("zebiie").value );
+    var code = document.getElementById("drie").value;
+    var len = code.length;
+    var x, text;
+    
+    var ar =  12;
+    if (getal >= 2016 && getal <= 2018){
+    console.log("het werkt");
+    }   
+    else{
+    console.log("foute jaartal")
+
+    }
+    if (ar >= len){
+      console.log("code werkt");
+    }
+    document.getElementById("demo").innerHTML = text;
+    var array = (document.getElementById("te").value).split();
+    x = document.getElementById("te").value;
+    if (x == "" || (parseInt(array[0]) >= 0 ) )
+    {
+    text = "not valid";
+    console.log("omschrijving leeg")
+    }else {
+      text = "valid"
+    }
+    document.getElementById("demo").innerHTML = text;
+    
+
+  }
+
+    
+    </script>
+
+  
+<style>
+  
+</style>
+</head>
+<body>
+  <h2>Opgave 1.</h2>
+
+ <br>   Jaar: <input id="zebiie"> 
+ <br>    Niveau: <select>
+    <option>Beginners</option>
+    <option>gevaaridigd</option>
+     <option >expert</option>
+ </select>         
+ <br>     Omschrijving: <input id="te">
+ <br>     Code: <input id="drie" value="2016-ABC-" >
+ <br>    <button onclick="run()">Verstuur</button>
+ <br> <p id="demo"></p>
+
+ <br> <H1>Tafel van willekeurig getal</H1>
+ <h2>Opgave 2.</h2>
+ <br> Bekijk de tafel van een willekeurig getal in en klik op de knop 'Bereken!'
+ <br> De tafel van : <input> <button onclick="">Bereken!</button> <button>Wissen</button>
+ <br>
+ <br> ____________________________________________________________________________________________
+ <br> maal1:   maal2:   maal3:
+ <br> <input id="ln">  <input id="ln">  <input>
+
+</body>
+</html>
